@@ -1,3 +1,5 @@
+from qiskit import QuantumCircuit, Aer, execute
+
 def add_ising_term(circ, gamma, edge):
     i, j = edge
     circ.cx(i, j)
